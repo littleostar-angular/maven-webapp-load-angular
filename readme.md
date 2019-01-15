@@ -1,12 +1,17 @@
 
 ---
+[current page link](https://github.com/littleostar-angular/maven-webapp-load-angular)
 
-a: RouterModule.forRoot(routes, {useHash: true})
+---
+
+#### access right angular on tomcat
+
+##### a: RouterModule.forRoot(routes, {useHash: true})
 
 drawback: the website url have "#", disadvantage, google hard search it.
 
----
-b: setting tomcat server
+
+##### b: setting tomcat server
 
 b.1 in Tomcat’s "/conf" directory, add "REWRITE VALVE" to "context.xml" file.
 
@@ -42,12 +47,17 @@ b.5 put "rewrite.config" file on WEB-INF folder.
 
 b.6 build maven-webapp project, get war file, put war to tomcat webapps folder. run it. success.
 
+![Maven webapp project structure image](https://github.com/littleostar-angular/maven-webapp-load-angular/blob/master/_image/XtZpG.jpg?raw=true)
+
 ---
 
+#### edit configuration run maven-angular on tomcat use intellij-idea
 
-![Maven webapp project structure image](https://i.stack.imgur.com/XtZpG.jpg)
+a. add tomcat server
 
-[sample demo](https://github.com/littleostar-angular/maven-webapp-load-angular)
+b. deployment xxx.war
+
+c. run tomcat configuration
 
 ---
 end
